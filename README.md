@@ -2,12 +2,12 @@
 Computes a similarity matrix between reviewers and papers using TF-IDF.
 
 How to use:
-- You may have to install the nltk library (pip install nltk)
+- You may have to install the nltk library ("pip install nltk")
 - Create the following two folders:
     - "Paper_Folder": Contains text files where each text file contains the text of a paper
     - "Reviewer_Folder": Contains text files where each text file contains the text of a potential reviewer's past papers
-- Call compute_similarities(Reviewer_Folder, Paper_Folder) 
-- The input to this function are the addresses of the two folders
+- (reviewer_idx, paper_idx, similarity_matrix) = compute_similarities(Reviewer_Folder, Paper_Folder) 
+- The inputs to this function are the paths of the two folders (i.e., both inputs should be strings)
 - The output is the list of reviewers indexed by their respective text filenames, list of papers indexed by their respective text filenams, and the similarity matrix
 - The similarity matrix has one row per reviewer and one column per paper, where the rows and columns are ordered according to the aforementioned lists
 
